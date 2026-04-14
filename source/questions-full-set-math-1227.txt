@@ -1,0 +1,751 @@
+================================================================================
+  RUET — Dept. of Mechatronics Engineering
+  Math 1227: Vector, Matrix & Ordinary Differential Equations
+  Question Bank (2014 – 2024)
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+H1: 1  VECTOR ANALYSIS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+── 1.1  Vectors: Linear Dependence / Independence ──────────────────────────────
+
+(1)  Determine whether the vectors a = 2i + j − 3k, b = i − 4k, c = 4i + 3j − k
+     are linearly dependent or independent. If dependent, find a relation between
+     them and show that their terminal points are collinear.
+     (4–5 Marks)  [2014-Q1(a), 2015-Q4(a), 2019-Q1(a)]
+
+(2)  Determine whether the vectors r₁ = 2i − j + k,  r₂ = i + 3j − 2k,
+     r₃ = −2i + j − 3k,  r₄ = 3i + 2j + 5k  are linearly dependent or
+     independent.
+     (3–4 Marks)  [2020-Q1(a), 2021-Q1(a)]
+
+(3)  Are the vectors A = 2i − k,  B = 3i − 2j + k,  C = 3i + 2j − k  linearly
+     independent? If not, find a dependent relation between them.
+     (4 Marks)  [2023-Q1(a)]
+
+(4)  Determine the volume of a tetrahedron whose adjacent edges are
+     A = 2i + j − 3k,  B = i − 4k,  C = 4i + 3j − k.
+     (4 Marks)  [2020-Q1(b)]
+
+── 1.2  Curves, Tangent Vectors & Curvature ────────────────────────────────────
+
+(5)  Find the unit tangent vector at the point where t = 2 on the curve
+     x = t² + 1,  y = 4t − 3,  z = 2t² − 6t.
+     (3–4 Marks)  [2019-Q1(b), 2023-Q1(b)]
+
+(6)  Find the curvature k for the curve  x = t,  y = t²,  z = 2t³/3.
+     (3 Marks)  [2023-Q1(c)]
+
+(7)  A particle moves along the curve  x = 2t²,  y = t² − 4t,  z = 3t − 5,
+     where t is time. Find the components of its velocity and acceleration at
+     t = 1 in the direction  i − 3j + 2k.
+     (4 Marks)  [2018-Q3(a)]
+
+── 1.3  Gradient, Divergence, Curl ─────────────────────────────────────────────
+
+(8)  What is the physical significance of ∇·∇φ (Laplacian)?
+     (4 Marks)  [2014-Q2(a)]
+
+(9)  Write down the geometrical interpretation of ∇Φ.
+     (5 Marks)  [2023-Q2(a)]
+
+(10) Find the angles which the vector F = (y²x − z)i + (yz² + x)j − 2x²z²k
+     makes with the coordinate axes. Also find ∇(∇·F) at the point (2, −1, 0).
+     (4 Marks)  [2014-Q1(b), 2014-Q1(c)]
+
+(11) Find the angle between the surfaces  xy²z = 3x + z²  and
+     3x² − y² + 2z = 1  at the point (1, −2, 1).
+     (4 Marks)  [2015-Q4(b)]
+
+(12) If V = (x + 3y)i + (y − 2z)j + (x + az)k, determine the constant 'a' so
+     that the divergence of V is zero.
+     (4 Marks)  [2016-Q3(c)]
+
+(13) Find the constants a, b, c so that
+     V = (x + 2y + az)i + (bx − 3y − z)j + (4x + cy + 2z)k  is irrotational.
+     (3 Marks)  [2015-Q4(c)]
+
+(14) Prove that:  (i) ∇ × (∇φ) = 0   (ii) ∇·(∇ × A) = 0.
+     (4 Marks)  [2018-Q3(b)]
+
+── 1.4  Directional Derivative ─────────────────────────────────────────────────
+
+(15) Find the directional derivative of  φ = x²yz + 4xz²  at (1, −2, −1)
+     in the direction  2i − j − 2k.
+     (4 Marks)  [2016-Q3(b), 2017-Q3(b)]
+
+(16) Find the directional derivative of  φ = 4xz³ − 3x²y²z  at (2, −1, 2)
+     in the direction  2i − 3j + 6k.
+     (3 Marks)  [2021-Q1(b)]
+
+(17) In what direction from the point (1, 3, 2) is the directional derivative of
+     φ = 2xz − y²  a maximum? What is the magnitude of this maximum?
+     (3 Marks)  [2022-Q1(b)]
+
+(18) Find the directional derivative of  φ = 4xz³ − 3x²y²z  at (2, −1, 2)
+     in the direction  2i − 3j + 6k. [Same as (16), different paper]
+     (3 Marks)  [2021-Q1(b)]
+
+── 1.5  Conservative Fields & Scalar Potential ─────────────────────────────────
+
+(19) Show that A = (6xy + z³)i + (3x² − z)j + (3xz² − y)k is irrotational.
+     Find φ such that A = ∇φ.
+     (4 Marks)  [2017-Q3(a)]
+
+(20) Show that F = (2xy + z²)i + x²j + 3xz²k is a conservative force field
+     and find the scalar potential.
+     (4–6 Marks)  [2020-Q2(a), 2022-Q1(c)]
+
+(21) Show that F = e^x cos z i + 2yj − e^x sin z k is irrotational. Find scalar
+     function φ such that F = ∇φ.
+     (4 Marks)  [2020-Q1(c)]
+
+(22) Show that F = xi + yj + zk is a conservative force field. Find scalar
+     potential Ø such that F = ∇Ø.
+     (4 Marks)  [2021-Q1(c)]
+
+(23) Show that E = r/r³ is irrotational. Find φ such that E = −∇φ and
+     φ(a) = 0 where a > 0.
+     (4 Marks)  [2019-Q1(c)]
+
+(24) Show that E = r/r² is conservative. Find scalar function φ such that
+     E = −∇φ and φ(a) = 0, where a > 0.
+     (3 Marks)  [2024-Q1(b)]
+
+(25) Find an equation for the plane perpendicular to A = 2i + 3j + 6k and
+     passing through the terminal point of vector B = i + 5j + 3k.
+     (3 Marks)  [2024-Q1(a)]
+
+(26) Find a unit vector perpendicular to the plane of A = 2i − 6j − 3k
+     and B = 4i + 3j − k.
+     (4 Marks)  [2016-Q3(a)]
+
+(27) Find the equations of the tangent plane and the normal line to the surface
+     xyz² = 4 at (2, 2, 1).
+     (4 Marks)  [2018-Q3(c)]
+
+── 1.6  Line Integrals ──────────────────────────────────────────────────────────
+
+(28) If F = 3xy i − y² j, evaluate ∫_C F·dr where C is the curve y = 2x²
+     from (0, 0) to (1, 2).
+     (4 Marks)  [2014-Q2(b)]
+
+(29) If F = (5xy − 6x²)i + (2y − 4x)j, evaluate ∫_C F·dr along the curve
+     y = x³ from (1, 1) to (2, 8).
+     (4 Marks)  [2017-Q3(c)]
+
+(30) If F = (2x + y)i + (3y − x)j, evaluate ∫_C F·dr where C is the curve in
+     the xy-plane consisting of straight lines from (0,0) to (2,0) and then
+     to (3,2).
+     (5 Marks)  [2022-Q2(a)]
+
+(31) Evaluate ∫_C A·dr along the curve x² + y² = 1, z = 1, in the positive
+     direction from (0,1,1) to (1,0,1) if
+     A = (yz + zx)i + xzj + (xy + 2z)k.
+     (4–5 Marks)  [2023-Q2(b), 2024-Q1(c)]
+
+(32) Find the work done in moving a particle once around a circle C in the
+     xy-plane if the circle has centre at origin, radius z, and the force field
+     is F = y³i − x³j.
+     (5 Marks)  [2021-Q2(a)]
+
+(33) Forces of magnitudes 5 and 3 acting in directions 6i+2j+3k and 3i−2j+6k
+     act on a particle displaced from (2,2,−1) to (4,3,1). Find the work done.
+     (3 Marks)  [2022-Q1(a)]
+
+── 1.7  Surface Integrals ───────────────────────────────────────────────────────
+
+(34) Evaluate ∬_S F·n̂ dS for F = xi + 2yj − zk where S is the surface of
+     the plane 2x + y = 6 in the first octant cut off by z = 4.
+     (4 Marks)  [2014-Q2(c)]
+
+(35) Evaluate ∬_S A·n̂ ds where A = yi + 2xj − zk and s is the surface of
+     the plane 2x + y = 6 in the first octant cut off by z = 4.
+     (6 Marks)  [2019-Q2(b)]
+
+(36) If F = 4xzi − y²j + yzk, evaluate ∬_S F·n̂ dS where S is the surface
+     of the cube bounded by x=0, x=1, y=0, y=1, z=0, z=1.
+     (5–6 Marks)  [2016-Q4(b), 2018-Q4(a), 2020-Q2(b)]
+
+(37) If F = 2yi − zj + x²k and s is the surface of the parabolic cylinder
+     y² = 8x in the first octant bounded by planes y=4 and z=6,
+     evaluate ∬_S F·n̂ ds.
+     (5 Marks)  [2021-Q2(b)]
+
+(38) Evaluate ∬_S Øn̂ dS where Ø = (3/8)xyz and S is the surface of the
+     cylinder x² + y² = 16 in the first octant between z=0 and z=5.
+     (5 Marks)  [2022-Q2(b)]
+
+(39) Evaluate ∬_S Øn̂ dS where Ø = 4x + 3y − 2z and S is the surface of
+     2x + y + 2z = 6 bounded by x=0, x=1, y=0, y=2.
+     (5 Marks)  [2023-Q3(a)]
+
+(40) Evaluate ∬_S (∇ × F)·η̂ ds where F = (x+2y)i − 3zj + xk and s is the
+     surface of 2x + y + 2z = 6 bounded by x=0, x=1, y=0, y=2.
+     (5 Marks)  [2024-Q2(a)]
+
+── 1.8  Volume Integrals ────────────────────────────────────────────────────────
+
+(41) If F = (2x² − 3z)i − 2xyj − 4xk, evaluate ∭_V (∇ × F) dv where V is
+     the closed region bounded by x=0, y=0, z=0 and 2x+2y+z=4.
+     (5–6 Marks)  [2019-Q2(a), 2024-Q2(b)]
+
+(42) Evaluate ∭_V (2x + y) dV where V is the closed region bounded by the
+     cylinder z = 4 − x² and the planes x=0, y=0, y=2 and z=0.
+     (6 Marks)  [2020-Q3(b)]
+
+── 1.9  Green's Theorem ─────────────────────────────────────────────────────────
+
+(43) Verify Green's theorem for ∮{(xy − x²)dx + x²y dy} where C is the
+     perimeter of the triangle bounded by x=1, y=0 and y=x.
+     (6 Marks)  [2016-Q4(a)]
+
+(44) Verify Green's theorem for ∮(3x² − 8y²)dx + (4y − 6xy)dy where C is
+     the boundary of the region defined by y = √x and y = x².
+     (5 Marks)  [2022-Q3(b)]
+
+── 1.10  Stokes' Theorem ───────────────────────────────────────────────────────
+
+(45) State and prove Stokes' theorem.
+     (6 Marks)  [2018-Q4(b)]
+
+(46) State and prove Stokes' theorem.
+     (5 Marks)  [2021-Q3(a)]
+
+(47) Verify Stokes' theorem for A = 3yi − xzj + yz²k where s is the surface
+     of the paraboloid 2z = x² + y² bounded by z = 2 with c traversed
+     clockwise.
+     (5 Marks)  [2023-Q3(b)]
+
+(48) Verify Stokes' theorem for E = xzi − yj + x²yz, where s is the surface
+     of the region bounded by x=0, y=0, z=0, 2x+y+2z=8 (not in xz-plane).
+     (5 Marks)  [2024-Q3(b)]
+
+── 1.11  Divergence Theorem ─────────────────────────────────────────────────────
+
+(49) State and prove the Divergence theorem. Also verify considering a suitable
+     example.
+     (12 Marks)  [2014-Q3]
+
+(50) State and prove the Divergence theorem.
+     (5–6 Marks)  [2020-Q3(a), 2021-Q3(a), 2022-Q3(a), 2024-Q3(a)]
+
+(51) Apply the Divergence theorem to compute ∬_S u·n̂ ds where s is the
+     surface of the cylinder x² + y² = a² bounded by z=0, z=b and
+     u = xi − yj + zk.
+     (6 Marks)  [2017-Q4(a)]
+
+(52) If F = [2yz, −x, y²] and V is bounded by surfaces x=0, y=0, y=6,
+     z=x², z=4, show that ∭_V F dv = [128, −24, 384].
+     (6 Marks)  [2017-Q4(b)]
+
+(53) Verify the Divergence theorem for A = 4xi − 2y²j + z²k taken over the
+     region bounded by x² + y² = 4,  Z = 0,  Z = 3.
+     (5 Marks)  [2021-Q3(b)]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+H1: 2  MATRICES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+── 2.1  Definitions & Special Matrices ─────────────────────────────────────────
+
+(1)  Define identity matrix and symmetric matrix.
+     (2–3 Marks)  [2014-Q4(c)]
+
+(2)  Define: Square matrix, Diagonal matrix, Upper triangular matrix, Symmetric
+     matrix, Hermitian matrix.
+     (3 Marks)  [2015-Q1(a)]
+
+(3)  Define Symmetric, Transpose, Orthogonal and Idempotent matrices.
+     (4 Marks)  [2017-Q1(a)]
+
+(4)  Define symmetric and skew-Hermitian matrix with example.
+     (2 Marks)  [2022-Q4(a)]
+
+(5)  Define matrix and symmetric matrix. If A and B are n×n symmetric
+     matrices, prove that AB is symmetric if and only if A and B commute.
+     (4 Marks)  [2023-Q4(a)]
+
+(6)  What is a matrix? Show that every real symmetric matrix is Hermitian.
+     (3 Marks)  [2021-Q4(a)]
+
+(7)  Show that the diagonal elements of a Hermitian matrix are real and those
+     of a skew-Hermitian matrix are either zero or pure imaginary.
+     (4 Marks)  [2015-Q3(c)]
+
+(8)  Show that every square matrix can be uniquely expressed as the sum of a
+     symmetric and a skew-symmetric matrix.
+     (3 Marks)  [2022-Q4(b)]
+
+(9)  Express the matrix [−1 7 1 ; 2 3 4 ; 5 0 5] as the sum of a symmetric
+     and a skew-symmetric matrix.
+     (4 Marks)  [2020-Q4(b)]
+
+(10) Find the symmetric and skew-symmetric parts of
+     A = [2 3 4 ; 4 3 1 ; 1 2 4].
+     (3 Marks)  [2024-Q4(b)]
+
+(11) Find the Hermitian part of the matrix
+     A = [2+3i  1−i  2+i ; 3  4+3i  5 ; 1  1+i  2i].
+     (3 Marks)  [2024-Q4(c)]
+
+(12) What is the transpose of a matrix? For any matrices A and B, prove that
+     (AB)' = B'A'.
+     (4–5 Marks)  [2015-Q1(c)]
+
+(13) What is an orthogonal matrix? Show that
+     [cos α  sin α ; −sin α  cos α]  is orthogonal.
+     (4 Marks)  [2016-Q1(a), 2018-Q1(a), 2023-Q4(c)]
+
+(14) What is an orthogonal matrix? If A and B are orthogonal, show AB is also
+     orthogonal.
+     (4 Marks)  [2020-Q4(a)]
+
+(15) What is the adjoint of a matrix? Prove that the adjoint of a symmetric
+     matrix is itself symmetric.
+     (4 Marks)  [2024-Q4(a)]
+
+(16) Given A = [11 −25 ; 4 −9], prove that Aⁿ = [1+10n  −25n ; 4n  1−10n].
+     (3 Marks)  [2023-Q4(b)]
+
+(17) What is the Jacobian matrix? If T(u,v) = (u²−v², 2uv), find
+     (i) velocity of u(t) = (t, t²) when t = 1,  (ii) Jacobian of T(u, v).
+     (4 Marks)  [2016-Q1(c)]
+
+── 2.2  Properties & Proofs ────────────────────────────────────────────────────
+
+(18) Prove that multiplication of matrices is distributive w.r.t. matrix addition.
+     (3 Marks)  [2015-Q1(b)]
+
+(19) Prove that (AB)⁻¹ = B⁻¹A⁻¹ where A and B are two non-singular matrices.
+     (4 Marks)  [2017-Q1(b)]
+
+(20) Prove that a square matrix A possesses an inverse if and only if A is
+     non-singular.
+     (4 Marks)  [2015-Q2(b)]
+
+── 2.3  Matrix Inverse ──────────────────────────────────────────────────────────
+
+(21) What is the inverse of a matrix?
+     (2–4 Marks)  [2014-Q5(a)]
+
+(22) Find the inverse of matrix [1 2 ; 5 11] by elementary transformation.
+     (4–6 Marks)  [2014-Q5(b)]
+
+(23) Find the inverse of  A = [0 1 2 ; 1 2 3 ; 3 1 1].
+     (4 Marks)  [2015-Q3(a)]
+
+(24) Find the inverse of  A = [3 2 2 ; 1 2 −3 ; 4 1 2].
+     (4 Marks)  [2017-Q1(c)]
+
+(25) What is an inverse of a matrix? Find the inverse of
+     [1 3 3 ; 1 4 3 ; 1 3 4].
+     (6 Marks)  [2019-Q3(a), 2020-Q4(c)]
+
+(26) What is an inverse of a matrix? Show that the inverse of a matrix is unique.
+     (3 Marks)  [2018-Q1(c), 2021-Q4(b)]
+
+(27) Find the adjoint and hence inverse of [1 2 1 ; 5 2 3 ; 1 1 2].
+     (4 Marks)  [2021-Q4(c)]
+
+(28) If A = [1 −1 1 ; 2 −1 0 ; 1 0 0], find A² and show that A² = A⁻¹.
+     (4 Marks)  [2016-Q1(b)]
+
+── 2.4  Rank of a Matrix ────────────────────────────────────────────────────────
+
+(29) Find the rank of matrix A = [1 0 2 1 ; 0 1 −2 1 ; 1 −1 4 0 ; 2 2 8 0]
+     by reducing to normal form.
+     (5 Marks)  [2014-Q4(b), 2018-Q1(b)]
+
+(30) Find the rank of matrix A = [1 2 −1 3 ; 3 4 0 −1 ; −1 0 −2 7].
+     (5 Marks)  [2015-Q2(c)]
+
+(31) Reduce matrix C to echelon form and find its rank where
+     C = [1 2 1 2 ; 1 3 2 2 ; 2 4 3 4 ; 3 7 4 6].
+     (4 Marks)  [2016-Q2(a)]
+
+(32) Find the rank of matrix  A = [1 −1 2 3 ; 4 1 0 2 ; 0 1 1 4 ; 0 1 0 2].
+     (6 Marks)  [2017-Q2(a)]
+
+(33) Transform matrix A = [0 1 −3 −1 ; 1 0 1 1 ; 3 1 0 2 ; 1 1 −2 0]
+     into normal form and find its rank.
+     (6 Marks)  [2019-Q4(a)]
+
+(34) Define rank of a matrix. Reduce A = [1 −1 2 −3 ; 4 1 0 2 ; 0 3 0 4 ; 0 1 0 2]
+     to normal form and find rank.
+     (6 Marks)  [2020-Q5(a)]
+
+(35) Define rank of matrix. Reduce A = [6 1 3 8 ; 4 2 6 −1 ; 10 3 9 7 ; 16 4 12 15]
+     to normal form and find rank.
+     (5 Marks)  [2021-Q5(a)]
+
+(36) Define rank of matrix. Reduce A = [2 3 −1 −1 ; 1 −1 −2 −4 ; 3 1 3 −2 ; 6 3 0 −7]
+     to normal form and find rank.
+     (5 Marks)  [2022-Q4(c), 2024-Q6(a)]
+
+── 2.5  Systems of Linear Equations ────────────────────────────────────────────
+
+(37) Find the value of a, if  [a 4 1] · [2 1 0 ; 1 0 2 ; 0 2 4] · [a ; 4 ; 1] = 0.
+     (3–4 Marks)  [2014-Q4(a)]
+
+(38) Find the values of x, y, z and a which satisfy
+     [x+3  2y+x ; z−1  4a−6] = [0 −7 ; 3 2a].
+     (3 Marks)  [2015-Q2(a)]
+
+(39) Test the consistency of  x+y−z=1,  2x+3y−3z=3,  x−3y+3z=2  and solve.
+     (4 Marks)  [2016-Q2(b)]
+
+(40) Apply the test of rank to examine if  2x−y+3z=8,  −x+2y+z=4,  3x+y−4z=0
+     are consistent, and if so, solve them.
+     (6 Marks)  [2018-Q2(a)]
+
+(41) Examine if  x+y+4z=6,  3x+2y−2z=9,  5x+y+2z=13  is consistent.
+     Find the solution if consistent.
+     (6 Marks)  [2019-Q3(b)]
+
+(42) Solve the linear system by matrix formula:
+     x+2y+z=0,  2x+y−z=2,  5x+7y−z=−3.
+     (6 Marks)  [2017-Q2(b)]
+
+(43) Determine for what values of λ and μ the system  x+y+z=6,  x+2y+3z=10,
+     x+2y+λz=μ  has  (i) no solution,  (ii) unique solution,
+     (iii) infinite solutions.
+     (5 Marks)  [2022-Q5(a)]
+
+(44) For what values of λ does the system  x+y+z=1,  x+2y+4z=λ,
+     x+4y+10z=λ²  have a solution? Solve completely in each case.
+     (5 Marks)  [2023-Q5(a)]
+
+(45) Solve by matrix method:  x−y+2z=3,  x+2y+3z=5,  3x−4y−5z=−13.
+     (5 Marks)  [2024-Q5(b)]
+
+── 2.6  Eigenvalues & Eigenvectors ─────────────────────────────────────────────
+
+(46) Find the eigenvalues and corresponding eigenvectors of
+     D = [1 1 ; −2 4].
+     (4 Marks)  [2016-Q2(c)]
+
+(47) Find the characteristic roots and characteristic vectors for
+     A = [1 4 ; 2 3].
+     (6 Marks)  [2018-Q2(b)]
+
+(48) Verify Cayley–Hamilton's theorem for
+     A = [2 −1 1 ; −1 2 −1 ; 1 −1 2].
+     (6 Marks)  [2019-Q4(b)]
+
+(49) Find the characteristic roots and vectors for
+     A = [2 √2 ; √2 1].
+     (6 Marks)  [2020-Q5(b)]
+
+(50) Find eigenvalues and eigenvectors of [3 2 4 ; 2 0 2 ; 4 2 3].
+     (5 Marks)  [2021-Q5(b)]
+
+(51) Find eigenvalues and corresponding eigenvectors of
+     A = [1 0 −1 ; 1 2 1 ; 2 2 3].
+     (5 Marks)  [2022-Q5(b)]
+
+(52) Define eigenvalue and eigenvector. Find eigenvalues and corresponding
+     eigenvectors of  A = [1 −3 3 ; 3 −5 3 ; 6 −6 4].
+     (5 Marks)  [2023-Q5(b)]
+
+(53) Find eigenvalues and corresponding eigenvectors of
+     A = [1 1 −2 ; −1 2 1 ; 0 1 −1].
+     (5 Marks)  [2024-Q5(a)]
+
+── 2.7  Orthogonal Matrices & Special Forms ────────────────────────────────────
+
+(54) Determine the values of α, β, γ when
+     [0 2β γ ; α β −γ ; α −β γ]  is orthogonal.
+     (4 Marks)  [2015-Q3(b)]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+H1: 3  ORDINARY DIFFERENTIAL EQUATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+── 3.1  Formation of Differential Equations ────────────────────────────────────
+
+(1)  Define differential equation. Give examples. Mention some applications.
+     (2–4 Marks)  [2016-Q6(a), 2022-Q6(a), 2024-Q6(b)]
+
+(2)  Form a differential equation from the relation  Ax² + By² = 1.
+     (4 Marks)  [2017-Q5(a)]
+
+(3)  Form a differential equation of  y = a ln x + b.
+     (2 Marks)  [2023-Q6(b)]
+
+(4)  Define differential equation with example. Form the DE corresponding to
+     y = ae^(2x) + be^(−2x) + ce^x  where a, b, c are parameters.
+     (4 Marks)  [2019-Q5(a)]
+
+(5)  Obtain the DE associated with the primitive  x²y³ + x³y⁵ = C.
+     (3–4 Marks)  [2016-Q6(b)]
+
+(6)  Obtain the DE associated with the primitive  y = Cx² + C².
+     (3 Marks)  [2021-Q6(b)]
+
+(7)  Obtain the DE of curves  xy = ae^x + be^(−x)  where a, b are parameters.
+     (4 Marks)  [2020-Q6(a)]
+
+── 3.2  Exact Differential Equations ───────────────────────────────────────────
+
+(8)  Define exact differential equation. Show that the necessary condition for
+     Mdx + Ndy = 0 to be exact is  ∂M/∂y = ∂N/∂x.
+     (5–7 Marks)  [2014-Q6(a), 2014-Q6(b)]
+
+(9)  Define exact DE. Test whether (x+y)²dx − (y²−2xy−x²)dy = 0 is exact and
+     solve it.
+     (4 Marks)  [2023-Q6(a)]
+
+(10) What is exact DE? Find the general solution of
+     (12y + 4x³ + 6x²)dx + 3(x + xy²)dy = 0.
+     (3 Marks)  [2024-Q7(a)]
+
+(11) Find the constant A such that
+     (Ay/x³ + y/x²)dx + (1/x² − 1/x)dy = 0  is exact and solve it.
+     (3 Marks)  [2022-Q6(c)]
+
+(12) Solve: (2x − y + 1)dx + (2y − x − 1)dy = 0.
+     (5–6 Marks)  [2014-Q6(c), 2019-Q5(b)]
+
+(13) Define exact DE. Solve  y(1 + xy)dx = x(1 − xy)dy.
+     (4 Marks)  [2016-Q5(b)]
+
+(14) Solve  (x² + 1)sin y dx + x cos y dy = 0.
+     (3 Marks)  [2021-Q6(c)]
+
+(15) Solve the initial value problem:  x sin y dx + (x²+1)cos y dy = 0,
+     y(0) = π/2.
+     (4 Marks)  [2022-Q6(b)]
+
+(16) Solve  (y²e^(xy²) + 4x³)dx + (2xye^(xy²) − 3y²)dy = 0.
+     (3 Marks)  [2024-Q6(c)]
+
+── 3.3  Homogeneous Equations ───────────────────────────────────────────────────
+
+(17) If M(x,y)dx + N(x,y)dy = 0 is homogeneous, show that y = vx transforms
+     it into a separable equation in v and x.
+     (4 Marks)  [2018-Q5(b)]
+
+(18) Solve:  dy/dx = (2x + y − 2)/(3x + y − 2).
+     (5 Marks)  [2017-Q5(b), 2019-Q5(b)]
+
+(19) Solve:  dy/dx = (xy − 2y²)/(x² − 3xy).
+     (4 Marks)  [2023-Q6(c)]
+
+(20) Find the general solution of  xdy = (y² − 1)dx.
+     (3 Marks)  [2017-Q5(c)]
+
+── 3.4  Separable & Simple First-Order Equations ───────────────────────────────
+
+(21) Solve  x³ dx + (y+1)² dy = 0  satisfying initial conditions x=1, y=2.
+     (4 Marks)  [2018-Q5(c)]
+
+(22) Solve  (x+y)² dy/dx = a².
+     (4 Marks)  [2016-Q5(a)]
+
+(23) Find the singular solution and complete solution of  y = px + p − p²
+     where p = dy/dx.
+     (4 Marks)  [2016-Q5(c)]
+
+(24) Solve  y² + x² dy/dx = xy dy/dx.
+     (4 Marks)  [2020-Q6(b)]
+
+── 3.5  Integrating Factor ──────────────────────────────────────────────────────
+
+(25) Define integrating factor. Find the IF of  dy/dx + y = 3x² − 3x.
+     Hence solve it.
+     (5 Marks)  [2015-Q5(b)]
+
+(26) What is integrating factor? Find the IF of  ydx + (3 + 3x − y)dy = 0,
+     and hence solve it.
+     (4–6 Marks)  [2017-Q6(b), 2019-Q6(a)]
+
+(27) Define integrating factor. Explain it with an example.
+     (2 Marks)  [2023-Q7(a)]
+
+(28) Find integrating factor and hence solve:  y ln x dx + (x − ln y)dy = 0.
+     (4 Marks)  [2023-Q7(b)]
+
+(29) Find integrating factor and hence find general solution of
+     y ln y dx + (x − ln y)dy = 0.
+     (4 Marks)  [2024-Q7(c)]
+
+(30) Find the integrating factor of
+     (3x²y⁴ + 2xy)dx + (2x³y³ − x²)dy = 0. Hence solve it.
+     (4 Marks)  [2020-Q6(c)]
+
+── 3.6  First-Order Linear Equations ───────────────────────────────────────────
+
+(31) Solve:  dy/dx + y = e^(−x).
+     (6 Marks)  [2014-Q7(a)]
+
+(32) Find the general solution of  dy/dx + 2xy = 2e^(−x²).
+     (4 Marks)  [2019-Q5(c)]
+
+(33) Identify and solve:  (1 + x²) dy/dx + 2xy = 4x²;  y(0) = 1.
+     (4 Marks)  [2023-Q7(c)]
+
+(34) Find the current from  L di/dt + Ri = E₀ sin ωt  where L, R, E₀ are
+     constants.
+     (4 Marks)  [2019-Q6(b)]
+
+(35) Solve  L di/dt + Ri = E sin 2t,  where L, R, E are constants,  i = 0
+     when t = 0.
+     (5–6 Marks)  [2018-Q6(a), 2024-Q8(b)]
+
+── 3.7  Bernoulli Equations ─────────────────────────────────────────────────────
+
+(36) Find the general solution of  dy/dx + y/(2x) = x/y³,  y(1) = 2.
+     (4 Marks)  [2015-Q5(c)]
+
+(37) Solve  dy/dx + (1/3)y = (1/3)(1 − 2x)y⁴,  y(0) = 1.
+     (4–6 Marks)  [2016-Q6(c), 2018-Q6(b)]
+
+(38) Find general solution of  dy/dx = x³y³ − xy.
+     (4 Marks)  [2019-Q6(c)]
+
+(39) Identify and solve first order DE:  xy dy/dx = y³e^(−x²).
+     (5 Marks)  [2022-Q7(a)]
+
+(40) Solve  dy/dx + xsin2y = x³cos²y.
+     (3 Marks)  [2024-Q7(b)]
+
+── 3.8  Higher-Order Linear DEs (Constant Coefficients) ────────────────────────
+
+(41) Solve:  d²y/dx² + y = sin x.
+     (6 Marks)  [2014-Q7(b)]
+
+(42) Solve  d²y/dx² + y = tan x.
+     (6 Marks)  [2015-Q7(a)]
+
+(43) Solve  d²y/dx² − 2 dy/dx − 3y = 2eˣ − 10 sin x.
+     (6 Marks)  [2015-Q7(b)]
+
+(44) Solve the following DEs:
+     (i)  (D² + 9)y = x² + x + 1
+     (ii) (D² − 4D + 4)y = eˣ + cos 2x + x²
+     (iii) y'' − 4y' + 3y = 3eˣ cos x + 2xe^(3x).
+     (6 Marks)  [2015-Q6]
+
+(45) Find the general solution of:
+     (a) (D² − 9D + 18)y = e^(−3x)
+     (b) (D² − 2D + 3)y = x³ + sin x
+     (c) (D² + 4)y = x² sin 2x.
+     (12 Marks)  [2016-Q7]
+
+(46) Solve:
+     (i)  (D² − 5D + 6)y = e^(3x) + xe^(2x)
+     (ii) (D³ − 2D + 4)y = eˣ cos x
+     (iii)(D² − D + 1)y = sin 2x.
+     (12 Marks)  [2018-Q7]
+
+(47) Solve:
+     (i)  (D² + 4D + 3)y = e^(−3x)
+     (ii) (D² − 9)y = 6e^(2x) + xe^(3x)
+     (iii)(D³ + 2D² + D)y = e^(2x) + x³ + x.
+     (12 Marks)  [2019-Q7(a)]
+
+(48) Solve:
+     (i)  (D² + 2D + 1)y = eˣ + e^(−x)
+     (ii) (D² + 1)y = x sin x
+     (iii)(D² − 4D + 4)y = x²e^(2x).
+     (12 Marks)  [2020-Q7]
+
+(49) Solve:
+     (a) (D² − 4D + 3)y = 3eˣ cos x + 2xe^(3x)
+     (b) (D² + 5D + 4)y = 3 − 2x
+     (c) (D² − 3D + 2)y = sin 3x.
+     (10 Marks)  [2021-Q7]
+
+(50) Solve completely:
+     (a) (D² − 4)y = eˣ − sin x
+     (b) (D² − 4D + 4)y = x² + eˣ
+     (c) (D² + 1)y = x sin x.
+     (10 Marks)  [2022-Q8]
+
+(51) Solve the following DEs:
+     (a) (D² + a²)y = tan ax
+     (b) (D³ − D² − 6D)y = x² + 1
+     (c) (D⁴ + D² + 1)y = ax² + be^(−x) sin 2x.
+     (10 Marks)  [2023-Q8]
+
+── 3.9  Initial Value Problems (Higher Order) ───────────────────────────────────
+
+(52) Find the complete solution of  y'' − 6y' + 25y = 0;  y(0) = −3,  y'(0) = −1.
+     (5 Marks)  [2022-Q7(b)]
+
+(53) Solve  ÿ + 5ẏ + 4y = 16x + 20e^(−x);  y(0) = 0,  ẏ(0) = 3.
+     (6 Marks)  [2019-Q8(a)]
+
+── 3.10  Cauchy–Euler Equations ─────────────────────────────────────────────────
+
+(54) Solve  (x²D² − 3xD + 4)y = x²;  y(1) = 0,  y'(e) = e²  where D = d/dx.
+     (5 Marks)  [2021-Q8(a)]
+
+(55) Solve  x² d²y/dx² + x dy/dx + y = x  subject to y = 0,  dy/dx = 0 when
+     x = 1.
+     (6 Marks)  [2020-Q8(b)]
+
+(56) Solve  (x³D³ + 2xD − 2)y = x² ln x + 3x.
+     (5 Marks)  [2024-Q8(a)]
+
+── 3.11  Method of Variation of Parameters ─────────────────────────────────────
+
+(57) By the method of variation of parameters, solve
+     d²y/dx² + (1 − cot x) dy/dx − y cot x = sin²x.
+     (6 Marks)  [2019-Q8(b)]
+
+(58) Apply variation of parameters to solve
+     x² d²y/dx² + x dy/dx − y = x²eˣ.
+     (6 Marks)  [2018-Q8(b)]
+
+(59) Using variation of parameters, solve
+     (x−1)D²y − xDy + y = (x−1)²,  D = d/dx.
+     (6 Marks)  [2020-Q8(a)]
+
+(60) Use variation of parameters to solve
+     d³y/dx³ + 2 d²y/dx² − dy/dx − 2y = eˣ + x².
+     (6 Marks)  [2021-Q8(b)]
+
+── 3.12  Applications of ODEs ───────────────────────────────────────────────────
+
+(61) Derive the pendulum equation. Solve it for the case of small oscillation.
+     (6 Marks)  [2014-Q8(a)]
+
+(62) Solve  dy/dx + y = y²,  y(0) = 1.
+     (6 Marks)  [2014-Q8(b)]
+
+(63) A parachutist falls with speed 55 ms⁻¹ when his parachute opens. If the
+     air resistance is WV²/25 N (W = total weight), find his speed as a
+     function of time t after the parachute opened.
+     (6 Marks)  [2015-Q8(a)]
+
+(64) Find the current when E(t) = E₀ in the circuit  L di/dt + Ri = E(t),
+     with initial current i₀;  R and L are constants.
+     (6 Marks)  [2015-Q8(b)]
+
+(65) If the population of a country doubles in 50 years, in how many years will
+     it treble (assuming rate of increase proportional to population)?
+     (4–6 Marks)  [2016-Q8(a)]
+
+(66) A body of mass m kg falls from rest in a medium where resistance is
+     proportional to v² (ms⁻¹). If terminal velocity is 50 ms⁻¹, find the
+     velocity at the end of 2 seconds.
+     (5–6 Marks)  [2016-Q8(b)]
+
+(67) A body executes damped forced vibrations governed by
+     d²x/dt² + 2k dx/dt + b²x = e^(−kt) sin ωt.
+     Solve for both cases: ω² ≠ (b²−k²) and ω² = (b²−k²).
+     (6 Marks)  [2018-Q8(a)]
+
+(68) In an electric circuit with resistance R Ω and capacitance C F in series
+     with emf E (volts), the charge q obeys  R dq/dt + q/C = E.
+     Given R = 1000 Ω and E = E₀ cos(120t) volts, find q with q(0) = 0.
+     (6 Marks)  [2017-Q8(b)]
+
+================================================================================
+END OF QUESTION BANK
+================================================================================

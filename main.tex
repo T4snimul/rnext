@@ -1,0 +1,35 @@
+\documentclass[11pt,a4paper]{article}
+
+% ============================================================================
+% MASTER DOCUMENT: Math 1227 Student Worksheet
+% ============================================================================
+% This document loads modular LaTeX files from sections/ directory.
+% Build with: latexmk -pdf main.tex
+% Output will be in: build/main.pdf
+%
+% Structure:
+% - main.tex (this file) - master template
+% - sections/preamble.tex - packages and custom commands
+% - sections/cover.tex - title page and instructions
+% - sections/part-a.tex - Vector Analysis questions
+% - sections/part-b.tex - Matrices questions  
+% - sections/part-c.tex - ODE questions
+%
+% Build outputs (aux, log, pdf) automatically go to build/ directory
+% configured in .latexmkrc
+% ============================================================================
+
+% Load all custom configuration and commands
+\input{sections/preamble}
+
+\begin{document}
+
+% Cover page and instructions
+\input{sections/cover}
+
+% Question sections
+\input{sections/part-a}
+\input{sections/part-b}
+\input{sections/part-c}
+
+\end{document}

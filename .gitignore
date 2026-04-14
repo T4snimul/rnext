@@ -1,0 +1,26 @@
+# LaTeX build outputs
+build/
+*.pdf
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+
+# Editor artifacts
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+*.sublime-workspace
+
+# Node/Package management (if used)
+node_modules/
+package-lock.json
+yarn.lock

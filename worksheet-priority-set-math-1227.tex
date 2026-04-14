@@ -1,0 +1,326 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\lhead{RUET - Mechatronics Engineering}
+\rhead{Math 1227 Worksheet}
+\cfoot{Page \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+
+\newcounter{qnum}
+
+\newcommand{\answerbox}[1]{%
+  \par\vspace{2pt}
+  \fbox{\begin{minipage}[t][#1][t]{\dimexpr\linewidth-2\fboxsep-2\fboxrule}\vspace{0pt}\end{minipage}}%
+  \par\vspace{4pt}
+}
+
+\newcommand{\qitem}[4]{%
+  \refstepcounter{qnum}
+  \answerbox{#4}%
+  \noindent\textbf{Q\theqnum.} #1\\
+  {\small \textit{Marks: #2 \hfill Source: #3}}\par\vspace{6pt}
+}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Math 1227 Student Worksheet}}\\[4pt]
+{\large \textbf{Vector, Matrix \& Ordinary Differential Equations}}\\[6pt]
+RUET -- Department of Mechatronics Engineering
+\end{center}
+
+\vspace{6pt}
+\textbf{Name:} \rule{0.46\linewidth}{0.4pt}
+\hfill
+\textbf{Date:} \rule{0.24\linewidth}{0.4pt}
+
+\textbf{Student ID:} \rule{0.32\linewidth}{0.4pt}
+\hfill
+\textbf{Section:} \rule{0.24\linewidth}{0.4pt}
+
+\vspace{6pt}
+\textbf{Instructions}
+\begin{itemize}[leftmargin=1.5em,itemsep=2pt,topsep=2pt]
+  \item Write clearly and show major steps for all computations and proofs.
+  \item Use correct vector and matrix notation.
+  \item Circle or underline your final answer where appropriate.
+\end{itemize}
+
+\hrule
+\vspace{8pt}
+
+\section{Part A: Vector Analysis}
+
+\subsection{A1. Vectors, Curves, and Differential Operators}
+
+\qitem{Determine whether the vectors
+$a = 2\mathbf{i} + \mathbf{j} - 3\mathbf{k}$,
+$b = \mathbf{i} - 4\mathbf{k}$,
+$c = 4\mathbf{i} + 3\mathbf{j} - \mathbf{k}$ are linearly dependent or independent.
+If dependent, find a relation among them and show that their terminal points are collinear.}{4--5}{2014-Q1(a), 2015-Q4(a), 2019-Q1(a)}{1.4in}
+
+\qitem{Determine whether the vectors
+$r_1 = 2\mathbf{i} - \mathbf{j} + \mathbf{k}$,
+$r_2 = \mathbf{i} + 3\mathbf{j} - 2\mathbf{k}$,
+$r_3 = -2\mathbf{i} + \mathbf{j} - 3\mathbf{k}$,
+$r_4 = 3\mathbf{i} + 2\mathbf{j} + 5\mathbf{k}$ are linearly dependent or independent.}{3--4}{2020-Q1(a), 2021-Q1(a)}{1.2in}
+
+\qitem{Determine the volume of a tetrahedron whose adjacent edges are
+$A = 2\mathbf{i} + \mathbf{j} - 3\mathbf{k}$,
+$B = \mathbf{i} - 4\mathbf{k}$,
+$C = 4\mathbf{i} + 3\mathbf{j} - \mathbf{k}$.}{4}{2020-Q1(b)}{1.0in}
+
+\qitem{Find the unit tangent vector at $t=2$ for the curve
+$x=t^2+1$, $y=4t-3$, $z=2t^2-6t$.}{3--4}{2019-Q1(b), 2023-Q1(b)}{1.0in}
+
+\qitem{Find the curvature $\kappa$ for the curve
+$x=t$, $y=t^2$, $z=\dfrac{2t^3}{3}$.}{3}{2023-Q1(c)}{0.9in}
+
+\qitem{What is the physical significance of $\nabla\cdot(\nabla\phi)$ (Laplacian)?}{4}{2014-Q2(a)}{1.0in}
+
+\qitem{Write down the geometrical interpretation of $\nabla\Phi$.}{5}{2023-Q2(a)}{1.0in}
+
+\qitem{Find the angles which the vector field
+$F=(y^2x-z)\mathbf{i}+(yz^2+x)\mathbf{j}-2x^2z^2\mathbf{k}$
+makes with the coordinate axes. Also find $\nabla(\nabla\cdot F)$ at $(2,-1,0)$.}{4}{2014-Q1(b), 2014-Q1(c)}{1.4in}
+
+\qitem{If $V=(x+3y)\mathbf{i}+(y-2z)\mathbf{j}+(x+az)\mathbf{k}$, determine the constant $a$ so that the divergence of $V$ is zero.}{4}{2016-Q3(c)}{1.0in}
+
+\qitem{Find constants $a,b,c$ so that
+$V=(x+2y+az)\mathbf{i}+(bx-3y-z)\mathbf{j}+(4x+cy+2z)\mathbf{k}$ is irrotational.}{3}{2015-Q4(c)}{1.1in}
+
+\newpage
+\subsection{A2. Directional Derivatives and Potentials}
+
+\qitem{Prove that: (i) $\nabla\times(\nabla\phi)=0$ and (ii) $\nabla\cdot(\nabla\times A)=0$.}{4}{2018-Q3(b)}{1.2in}
+
+\qitem{Find the directional derivative of
+$\phi=x^2yz+4xz^2$ at $(1,-2,-1)$ in the direction $2\mathbf{i}-\mathbf{j}-2\mathbf{k}$.}{4}{2016-Q3(b), 2017-Q3(b)}{1.1in}
+
+\qitem{Find the directional derivative of
+$\phi=4xz^3-3x^2y^2z$ at $(2,-1,2)$ in the direction $2\mathbf{i}-3\mathbf{j}+6\mathbf{k}$.}{3}{2021-Q1(b)}{1.1in}
+
+\qitem{From the point $(1,3,2)$, in what direction is the directional derivative of
+$\phi=2xz-y^2$ maximum? Find the magnitude of this maximum.}{3}{2022-Q1(b)}{1.1in}
+
+\qitem{Show that
+$A=(6xy+z^3)\mathbf{i}+(3x^2-z)\mathbf{j}+(3xz^2-y)\mathbf{k}$ is irrotational.
+Find $\phi$ such that $A=\nabla\phi$.}{4}{2017-Q3(a)}{1.4in}
+
+\qitem{Show that
+$F=(2xy+z^2)\mathbf{i}+x^2\mathbf{j}+3xz^2\mathbf{k}$ is a conservative force field,
+and find the scalar potential.}{4--6}{2020-Q2(a), 2022-Q1(c)}{1.4in}
+
+\qitem{Show that
+$F=e^x\cos z\,\mathbf{i}+2y\,\mathbf{j}-e^x\sin z\,\mathbf{k}$ is irrotational.
+Find scalar function $\phi$ such that $F=\nabla\phi$.}{4}{2020-Q1(c)}{1.4in}
+
+\qitem{Show that $F=x\mathbf{i}+y\mathbf{j}+z\mathbf{k}$ is conservative.
+Find scalar potential $\Phi$ such that $F=\nabla\Phi$.}{4}{2021-Q1(c)}{1.2in}
+
+\subsection{A3. Integral Theorems and Applications}
+
+\qitem{If $F=3xy\,\mathbf{i}-y^2\,\mathbf{j}$, evaluate
+$\int_C F\cdot d\mathbf{r}$ where $C$ is $y=2x^2$ from $(0,0)$ to $(1,2)$.}{4}{2014-Q2(b)}{1.1in}
+
+\qitem{If $F=(2x+y)\mathbf{i}+(3y-x)\mathbf{j}$, evaluate
+$\int_C F\cdot d\mathbf{r}$ where $C$ is the broken line from $(0,0)$ to $(2,0)$ to $(3,2)$.}{5}{2022-Q2(a)}{1.2in}
+
+\qitem{Evaluate $\int_C A\cdot d\mathbf{r}$ along
+$x^2+y^2=1$, $z=1$, from $(0,1,1)$ to $(1,0,1)$ if
+$A=(yz+zx)\mathbf{i}+xz\mathbf{j}+(xy+2z)\mathbf{k}$.}{4--5}{2023-Q2(b), 2024-Q1(c)}{1.4in}
+
+\qitem{Evaluate $\iint_S F\cdot \hat{n}\,dS$ for
+$F=x\mathbf{i}+2y\mathbf{j}-z\mathbf{k}$ where $S$ is the part of plane
+$2x+y=6$ in the first octant cut by $z=4$.}{4}{2014-Q2(c)}{1.3in}
+
+\qitem{If $F=4xz\mathbf{i}-y^2\mathbf{j}+yz\mathbf{k}$, evaluate
+$\iint_S F\cdot \hat{n}\,dS$ over the surface of cube
+$0\le x\le 1$, $0\le y\le 1$, $0\le z\le 1$.}{5--6}{2016-Q4(b), 2018-Q4(a), 2020-Q2(b)}{1.4in}
+
+\qitem{If $F=(2x^2-3z)\mathbf{i}-2xy\mathbf{j}-4x\mathbf{k}$, evaluate
+$\iiint_V (\nabla\times F)\,dv$, where $V$ is bounded by
+$x=0$, $y=0$, $z=0$, and $2x+2y+z=4$.}{5--6}{2019-Q2(a), 2024-Q2(b)}{1.5in}
+
+\qitem{Verify Green's theorem for
+$\oint_C \{(xy-x^2)\,dx + x^2y\,dy\}$ where $C$ is the triangle bounded by
+$x=1$, $y=0$, and $y=x$.}{6}{2016-Q4(a)}{1.6in}
+
+\newpage
+\qitem{Verify Stokes' theorem for
+$A=3y\mathbf{i}-xz\mathbf{j}+yz^2\mathbf{k}$, where $S$ is
+$2z=x^2+y^2$ bounded by $z=2$, with $C$ traversed clockwise.}{5}{2023-Q3(b)}{1.6in}
+
+\qitem{State and prove the Divergence theorem.}{5--6}{2020-Q3(a), 2021-Q3(a), 2022-Q3(a), 2024-Q3(a)}{1.8in}
+
+\section{Part B: Matrices}
+
+\qitem{Apply the Divergence theorem to compute
+$\iint_S u\cdot \hat{n}\,ds$ where $S$ is the cylinder $x^2+y^2=a^2$ between
+$z=0$ and $z=b$, and $u=x\mathbf{i}-y\mathbf{j}+z\mathbf{k}$.}{6}{2017-Q4(a)}{1.6in}
+
+\subsection{B1. Definitions and Fundamental Properties}
+
+\qitem{Define: square matrix, diagonal matrix, upper triangular matrix,
+symmetric matrix, and Hermitian matrix.}{3}{2015-Q1(a)}{1.0in}
+
+\qitem{Define symmetric, transpose, orthogonal, and idempotent matrices.}{4}{2017-Q1(a)}{1.0in}
+
+\qitem{Define matrix and symmetric matrix. If $A$ and $B$ are symmetric
+$n\times n$ matrices, prove that $AB$ is symmetric if and only if $A$ and $B$ commute.}{4}{2023-Q4(a)}{1.4in}
+
+\qitem{Show that every square matrix can be uniquely expressed as the sum of
+a symmetric matrix and a skew-symmetric matrix.}{3}{2022-Q4(b)}{1.1in}
+
+\qitem{Find the symmetric and skew-symmetric parts of
+$A=\begin{bmatrix}2&3&4\\4&3&1\\1&2&4\end{bmatrix}$.}{3}{2024-Q4(b)}{1.1in}
+
+\qitem{What is the transpose of a matrix? Prove that $(AB)^T=B^TA^T$ for any
+compatible matrices $A$ and $B$.}{4--5}{2015-Q1(c)}{1.3in}
+
+\qitem{What is an orthogonal matrix? Show that
+$\begin{bmatrix}\cos\alpha&\sin\alpha\\-\sin\alpha&\cos\alpha\end{bmatrix}$
+is orthogonal.}{4}{2016-Q1(a), 2018-Q1(a), 2023-Q4(c)}{1.3in}
+
+\qitem{What is the adjoint of a matrix? Prove that the adjoint of a symmetric
+matrix is also symmetric.}{4}{2024-Q4(a)}{1.2in}
+
+\qitem{Prove that matrix multiplication is distributive over matrix addition.}{3}{2015-Q1(b)}{1.0in}
+
+\qitem{Prove that $(AB)^{-1}=B^{-1}A^{-1}$ for two non-singular matrices
+$A$ and $B$.}{4}{2017-Q1(b)}{1.1in}
+
+\newpage
+\subsection{B2. Inverse and Rank of a Matrix}
+
+\qitem{Prove that a square matrix $A$ has an inverse if and only if $A$ is
+non-singular.}{4}{2015-Q2(b)}{1.0in}
+
+\qitem{Find the inverse of
+$\begin{bmatrix}1&2\\5&11\end{bmatrix}$ by elementary transformations.}{4--6}{2014-Q5(b)}{1.2in}
+
+\qitem{Find the inverse of
+$A=\begin{bmatrix}0&1&2\\1&2&3\\3&1&1\end{bmatrix}$.}{4}{2015-Q3(a)}{1.2in}
+
+\qitem{What is an inverse of a matrix? Find the inverse of
+$\begin{bmatrix}1&3&3\\1&4&3\\1&3&4\end{bmatrix}$.}{6}{2019-Q3(a), 2020-Q4(c)}{1.4in}
+
+\qitem{Find the adjoint and hence inverse of
+$\begin{bmatrix}1&2&1\\5&2&3\\1&1&2\end{bmatrix}$.}{4}{2021-Q4(c)}{1.3in}
+
+\qitem{Find the rank of
+$A=\begin{bmatrix}1&0&2&1\\0&1&-2&1\\1&-1&4&0\\2&2&8&0\end{bmatrix}$
+by reducing to normal form.}{5}{2014-Q4(b), 2018-Q1(b)}{1.5in}
+
+\qitem{Reduce matrix $C$ to echelon form and find its rank, where
+$C=\begin{bmatrix}1&2&1&2\\1&3&2&2\\2&4&3&4\\3&7&4&6\end{bmatrix}$.}{4}{2016-Q2(a)}{1.4in}
+
+\qitem{Define rank of a matrix. Reduce
+$A=\begin{bmatrix}1&-1&2&-3\\4&1&0&2\\0&3&0&4\\0&1&0&2\end{bmatrix}$
+to normal form and find rank.}{6}{2020-Q5(a)}{1.6in}
+
+\qitem{Define rank of a matrix. Reduce
+$A=\begin{bmatrix}2&3&-1&-1\\1&-1&-2&-4\\3&1&3&-2\\6&3&0&-7\end{bmatrix}$
+to normal form and find rank.}{5}{2022-Q4(c), 2024-Q6(a)}{1.6in}
+
+\subsection{B3. Eigenvalues and Characteristic Theory}
+
+\qitem{Verify the Cayley-Hamilton theorem for
+$A=\begin{bmatrix}2&-1&1\\-1&2&-1\\1&-1&2\end{bmatrix}$.}{6}{2019-Q4(b)}{1.8in}
+
+\section{Part C: Ordinary Differential Equations}
+
+\subsection{C1. Formation and Exact Differential Equations}
+
+\qitem{Define differential equation. Give examples and mention some applications.}{2--4}{2016-Q6(a), 2022-Q6(a), 2024-Q6(b)}{1.0in}
+
+\qitem{Form a differential equation from the relation $Ax^2+By^2=1$.}{4}{2017-Q5(a)}{1.0in}
+
+\qitem{Define differential equation with an example. Form the differential equation
+corresponding to $y=ae^{2x}+be^{-2x}+ce^x$, where $a,b,c$ are parameters.}{4}{2019-Q5(a)}{1.2in}
+
+\qitem{Define exact differential equation. Show that a necessary condition for
+$Mdx+Ndy=0$ to be exact is $\dfrac{\partial M}{\partial y}=\dfrac{\partial N}{\partial x}$.}{5--7}{2014-Q6(a), 2014-Q6(b)}{1.4in}
+
+\qitem{Define exact differential equation. Test whether
+$(x+y)^2dx-(y^2-2xy-x^2)dy=0$ is exact and solve it.}{4}{2023-Q6(a)}{1.3in}
+
+\qitem{What is exact differential equation? Find the general solution of
+$(12y+4x^3+6x^2)dx+3(x+xy^2)dy=0$.}{3}{2024-Q7(a)}{1.2in}
+
+\qitem{Solve: $(2x-y+1)dx+(2y-x-1)dy=0$.}{5--6}{2014-Q6(c), 2019-Q5(b)}{1.3in}
+
+\newpage
+\qitem{Define exact differential equation. Solve
+$y(1+xy)dx=x(1-xy)dy$.}{4}{2016-Q5(b)}{1.2in}
+
+\qitem{Solve: $(x^2+1)\sin y\,dx + x\cos y\,dy = 0$.}{3}{2021-Q6(c)}{1.0in}
+
+\qitem{Solve the initial value problem:
+$x\sin y\,dx + (x^2+1)\cos y\,dy=0$, with $y(0)=\pi/2$.}{4}{2022-Q6(b)}{1.2in}
+
+\subsection{C2. Homogeneous, IF, and Linear First Order Equations}
+
+\qitem{If $M(x,y)dx+N(x,y)dy=0$ is homogeneous, show that substitution
+$y=vx$ transforms it into a separable equation in $v$ and $x$.}{4}{2018-Q5(b)}{1.2in}
+
+\qitem{Solve: $\dfrac{dy}{dx}=\dfrac{2x+y-2}{3x+y-2}$.}{5}{2017-Q5(b), 2019-Q5(b)}{1.2in}
+
+\qitem{Define integrating factor. Find the IF of
+$\dfrac{dy}{dx}+y=3x^2-3x$, and hence solve.}{5}{2015-Q5(b)}{1.3in}
+
+\qitem{What is integrating factor? Find the IF of
+$y\,dx+(3+3x-y)\,dy=0$, and hence solve.}{4--6}{2017-Q6(b), 2019-Q6(a)}{1.3in}
+
+\qitem{Solve: $\dfrac{dy}{dx}+y=e^{-x}$.}{6}{2014-Q7(a)}{1.2in}
+
+\qitem{Find the general solution of
+$\dfrac{dy}{dx}+2xy=2e^{-x^2}$.}{4}{2019-Q5(c)}{1.1in}
+
+\qitem{Identify and solve:
+$(1+x^2)\dfrac{dy}{dx}+2xy=4x^2$, with $y(0)=1$.}{4}{2023-Q7(c)}{1.2in}
+
+\qitem{Solve
+$L\dfrac{di}{dt}+Ri=E\sin 2t$, where $L,R,E$ are constants, and $i(0)=0$.}{5--6}{2018-Q6(a), 2024-Q8(b)}{1.4in}
+
+\subsection{C3. Bernoulli and Higher Order Equations}
+
+\qitem{Find the general solution of
+$\dfrac{dy}{dx}+\dfrac{y}{2x}=\dfrac{x}{y^3}$, with $y(1)=2$.}{4}{2015-Q5(c)}{1.2in}
+
+\qitem{Solve
+$\dfrac{dy}{dx}+\dfrac{1}{3}y=\dfrac{1}{3}(1-2x)y^4$, with $y(0)=1$.}{4--6}{2016-Q6(c), 2018-Q6(b)}{1.3in}
+
+\qitem{Solve: $\dfrac{d^2y}{dx^2}+y=\sin x$.}{6}{2014-Q7(b)}{1.3in}
+
+\qitem{Solve
+$\dfrac{d^2y}{dx^2}-2\dfrac{dy}{dx}-3y=2e^x-10\sin x$.}{6}{2015-Q7(b)}{1.4in}
+
+\qitem{Solve
+$(x^2D^2-3xD+4)y=x^2$, with $y(1)=0$, $y'(e)=e^2$, where $D=\dfrac{d}{dx}$.}{5}{2021-Q8(a)}{1.4in}
+
+\qitem{Using variation of parameters, solve
+$\dfrac{d^2y}{dx^2}+(1-\cot x)\dfrac{dy}{dx}-y\cot x=\sin^2x$.}{6}{2019-Q8(b)}{1.5in}
+
+\vfill
+\hrule
+\small
+Compiled from the Priority Question Bank for Math 1227.
+
+\end{document}

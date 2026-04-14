@@ -1,0 +1,53 @@
+% ============================================================================
+% PREAMBLE: Package configuration and custom commands
+% ============================================================================
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+% ============================================================================
+% LAYOUT AND SPACING
+% ============================================================================
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+% Page style with header/footer
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\lhead{RUET - Mechatronics Engineering}
+\rhead{Math 1227 Worksheet}
+\cfoot{Page \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+
+% ============================================================================
+% CUSTOM COMMANDS
+% ============================================================================
+
+\newcounter{qnum}
+
+% Answer box: full-width box before each question
+\newcommand{\answerbox}[1]{%
+  \par\vspace{2pt}
+  \fbox{\begin{minipage}[t][#1][t]{\dimexpr\linewidth-2\fboxsep-2\fboxrule}\vspace{0pt}\end{minipage}}%
+  \par\vspace{4pt}
+}
+
+% Question item: takes answer height, question text, marks, source
+\newcommand{\qitem}[4]{%
+  \refstepcounter{qnum}
+  \answerbox{#4}%
+  \noindent\textbf{Q\theqnum.} #1\\
+  {\small \textit{Marks: #2 \hfill Source: #3}}\par\vspace{6pt}
+}
