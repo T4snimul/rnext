@@ -17,6 +17,15 @@
   "latex-workshop.synctex.afterBuild.enabled": true,
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.clean.fileTypes": [
-    "*.aux", "*.bbl", "*.blg", "*.fdb_latexmk", "*.fls", "*.log", "*.out", "*.toc", "*.lof", "*.lot"
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.fdb_latexmk",
+    "*.fls",
+    "*.log",
+    "*.out",
+    "*.toc",
+    "*.lof",
+    "*.lot"
   ]
 }
