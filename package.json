@@ -1,0 +1,13 @@
+{
+  "name": "rnext",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Math 1227 LaTeX worksheet project",
+  "scripts": {
+    "dev": "node scripts/dev-server.js",
+    "dev:build": "npm run build",
+    "build": "latexmk -pdf main.tex",
+    "clean": "latexmk -c main.tex",
+    "clean:all": "latexmk -C main.tex"
+  }
+}

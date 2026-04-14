@@ -1,6 +1,7 @@
 # LaTeX build outputs
-build/
+build/*
 *.pdf
+!build/main.pdf
 *.aux
 *.log
 *.out

@@ -40,14 +40,14 @@
 % Answer box: full-width box before each question
 \newcommand{\answerbox}[1]{%
   \par\vspace{2pt}
-  \fbox{\begin{minipage}[t][#1][t]{\dimexpr\linewidth-2\fboxsep-2\fboxrule}\vspace{0pt}\end{minipage}}%
+  \fbox{\begin{minipage}[t][#1][t]{0.8\linewidth}\vspace{4pt}\end{minipage}}%
   \par\vspace{4pt}
 }
 
 % Question item: takes answer height, question text, marks, source
 \newcommand{\qitem}[4]{%
   \refstepcounter{qnum}
-  \answerbox{#4}%
   \noindent\textbf{Q\theqnum.} #1\\
   {\small \textit{Marks: #2 \hfill Source: #3}}\par\vspace{6pt}
+  \answerbox{#4}%
 }
