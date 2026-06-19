@@ -33,9 +33,9 @@ app.use((err, req, res, _next) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Listening on port 3000");
-  console.log("http://localhost:3000");
+app.listen(3001, () => {
+  console.log("Listening on port 3001");
+  console.log("http://localhost:3001");
 });
 
 module.exports = app;

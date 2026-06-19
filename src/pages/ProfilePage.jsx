@@ -4,6 +4,7 @@ import { useAuth } from "../hooks/useAuth";
 import useProfile from "../hooks/useProfile";
 import actions from "../actions";
 import ProfileInfo from "../components/profile/ProfileInfo";
+import MyPosts from "../components/profile/MyPosts";
 
 const ProfilePage = () => {
   const { api } = useApi();
@@ -42,6 +43,7 @@ const ProfilePage = () => {
     <div>
       <ProfileInfo />
       <div className="w-full border-b border-[#3F3F3F] py-6 lg:py-8"></div>
+      <MyPosts />
     </div>
   );
 };
