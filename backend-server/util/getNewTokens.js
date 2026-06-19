@@ -12,7 +12,7 @@ const getNewTokens = (user) => {
     process.env.SECRET_KEY,
     {
       expiresIn: process.env.JWT_EXPIRES_IN,
-    }
+    },
   );
 
   const refreshToken = jwt.sign(
@@ -20,7 +20,7 @@ const getNewTokens = (user) => {
     process.env.REFRESH_SECRET_KEY,
     {
       expiresIn: process.env.REFRESH_JWT_EXPIRES_IN,
-    }
+    },
   );
 
   return { token, refreshToken };
